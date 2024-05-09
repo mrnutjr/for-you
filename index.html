@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Pimpisa</title>
+    <style>
+        body {
+            background-color: #f7eef7; /* Light pink background */
+            color: #6e496e; /* Darker pink text color */
+            font-family: Arial, sans-serif;
+            padding: 20px; /* Add some padding for better readability */
+        }
+
+        h1 {
+            color: #9d5a9d; /* Dark pink header color */
+        }
+
+        p {
+            margin-bottom: 10px; /* Add some space between paragraphs */
+        }
+
+        .hidden-text {
+            display: none; /* Initially hide the text */
+            margin-top: 20px; /* Add some space above the hidden text */
+        }
+
+        .expand-button {
+            cursor: pointer;
+            color: #ffffff; /* White text color */
+            background-color: #9d5a9d; /* Dark pink background */
+            padding: 10px 20px; /* Add padding to make the button larger */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Display as a block element */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .expand-button:hover {
+            background-color: #7c417c; /* Darken the background color on hover */
+        }
+    </style>
 </head>
 <body>
-     <h1>Happy Birthday Pimpisa</h1>
-    <p>"I <del>wish you could be mind you all the best with your love.</del></p>
-    <p>Here's to your dreams coming true.</p>
-    <br>
-    <p>Thanks for everything, N.</p>
-    
-    <!-- Spotify Embed Code -->
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7j27Xo0jzWDI8fkRmLRs02?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></body>
+    <center>
+        <h1>Happy Birthday Pimpisa</h1>
+        <p>"I'm sorry for any past hurt.</p>
+        <p>I wish you <del>could be mine.</del></p>
+        <p>all the best with your love.</p>
+        <p>Here's to your dreams coming true."</p>
+        <br>
+        <p>Thanks for everything, N.</p>
+
+        <!-- Spotify Embed Code -->
+        <iframe id="spotifyPlayer" src="https://open.spotify.com/embed/track/7j27Xo0jzWDI8fkRmLRs02?utm_source=generator&theme=0" width="250" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br><br><br>
+        <!-- Expand Button -->
+        <div class="expand-button" onclick="toggleText()">ปัจฉิมลิขิต</div>
+        
+        <!-- Hidden Text -->
+        <p class="hidden-text" id="hiddenText">ด้วยความของขวัญมาจากการ์ตูนเรื่อง "Wish" เลยอยากจะอวยพรเป็นภาษาอังกฤษให้ดูเท่ๆ แต่ก็คือคำขอโทษก็คือตั้งใจจะขอโทษจริงๆ ขอโทษกับทุกสิ่งที่ผ่านมา ไม่ได้คาดหวังหรือต้องการอะไร อยากให้คุณมีความสุขมากๆ ทำสิ่งใดสมปรารถนา</p>
+    </center>
+
+    <script>
+        var isTextVisible = false; // Initialize a variable to track text visibility
+
+        function toggleText() {
+            var hiddenText = document.getElementById("hiddenText");
+            isTextVisible = !isTextVisible; // Toggle the variable
+            hiddenText.style.display = isTextVisible ? "block" : "none"; // Set display based on variable value
+        }
+    </script>
+</body>
 </html>
